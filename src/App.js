@@ -1,8 +1,8 @@
 //TODO: STEP 1 - Import the useState hook.
 import React, {useState} from "react";
 import "./App.css";
-import BottomRow from "./BottomRow";
-import Scoreboard from "./Scoreboard";
+import BottomRow from "./components/BottomRow";
+import Scoreboard from "./components/Scoreboard";
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
 
@@ -33,8 +33,11 @@ function App() {
 
            {/* </div>
       </div>  */}
+
+      
         <Scoreboard scoreH={scoreHome} scoreA={scoreAway}/>
         <BottomRow />
+
        </section>  
 
       <section className="buttons">
@@ -43,11 +46,11 @@ function App() {
           <button className="homeButtons__touchdown" onClick={() => setScoreHome(scoreHome + 7)}>Home Touchdown</button>
           <button className="homeButtons__fieldGoal" onClick={() => setScoreHome(scoreHome + 3)}>Home Field Goal</button>
 
-          {/* <button className="quarter" onClick={() => setQuarter(quarter + 1)}>Quarter</button> */}
+          
         
         </div>
         <div className="awayButtons">
-          <button className="awayButtons__touchdown" onClick={() => setScoreAway(scoreAway + 7)}>>Away Touchdown</button>
+          <button className="awayButtons__touchdown" onClick={() => setScoreAway(scoreAway + 7)}>Away Touchdown</button>
           <button className="awayButtons__fieldGoal" onClick={() => setScoreAway(scoreAway + 3)}>Away Field Goal</button>
         </div>
       </section>

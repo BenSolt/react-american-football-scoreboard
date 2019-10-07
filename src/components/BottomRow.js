@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "./App.css";
+import "../App.css";
 
 
 
@@ -32,7 +32,7 @@ const BottomRow = () => {
         <div className="quarter__value">{quarter}</div>
 
         <button className="quarter" onClick= {() => setQuarter(quarter + 1)} >Quarter</button>
-        {/*  */}
+        
 
       </div>
 
