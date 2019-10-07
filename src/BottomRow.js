@@ -31,7 +31,7 @@ const BottomRow = () => {
         <h3 className="quarter__title">Quarter</h3>
         <div className="quarter__value">{quarter}</div>
 
-        <button className="quarter" onClick={() => setQuarter(quarter + 1)}>Quarter</button>
+        <button className="quarter" onClick={() => setQuarter(quarter + 1),if setQuarter(0)}>Quarter</button>
       
 
       </div>
